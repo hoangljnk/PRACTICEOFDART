@@ -38,7 +38,7 @@ class LoginScreen extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(
-                top: 60.0, left: 60.0, right: 40.0, bottom: 20.0),
+                top: 60, left: 60, right: 40, bottom: 20),
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Username',
@@ -52,12 +52,7 @@ class LoginScreen extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(
-              top: 20.0,
-              left: 60.0,
-              right: 40.0,
-              bottom: 20.0,
-            ),
+            padding: const EdgeInsets.only(top: 20,left: 60,right: 40,bottom: 20,),
             child: TextField(
               decoration: InputDecoration(
                 hintText: 'Password',
@@ -71,7 +66,7 @@ class LoginScreen extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 30.0, left: 90.0),
+            padding: const EdgeInsets.only(top: 30, left: 90),
             child: RichText(
               text: const TextSpan(children: [
                 TextSpan(
@@ -85,7 +80,7 @@ class LoginScreen extends StatelessWidget {
             ),
           ),
           const Padding(
-            padding: EdgeInsets.only(top: 20.0, left: 90.0),
+            padding: EdgeInsets.only(top: 20, left: 90),
           ),
           ElevatedButton(
             onPressed: () {},
@@ -93,7 +88,7 @@ class LoginScreen extends StatelessWidget {
               foregroundColor: const Color.fromARGB(255, 234, 241, 240),
               backgroundColor: Colors.pink,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(25.0),
+                borderRadius: BorderRadius.circular(25),
               ),
               padding: const EdgeInsets.symmetric(
                 horizontal: 115.0,
@@ -103,12 +98,11 @@ class LoginScreen extends StatelessWidget {
             child: const Text('SIGN IN'),
           ),
           Padding(
-              padding: const EdgeInsets.only(top: 150.0),
-              child: RichText(
-                text: const TextSpan(
-                    text: "Don't have an account? ",
-                    style: TextStyle(color: Color.fromARGB(255, 3, 14, 9))),
-              )),
+              padding: const EdgeInsets.only(top: 150),
+              child: Text(
+                    "Don't have an account?",
+              ),
+              ),
           ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
